@@ -10,6 +10,7 @@
             padding:0;
             box-sizing: border-box;
             font-family: sans-serif;
+            font-size: 22px;
         }
         .name{
             font-weight: 900;
@@ -18,101 +19,159 @@
             background: lightgray;
         }
         .item{
-            padding: 54px 0;
+            margin-bottom:15px;
+            /* padding: 48px 0; */
+        }
+        .allergies{
+            color:red;
+        }
+        .wine{
+            color:#777;
         }
     </style>
 </head>
 <body>
     <div style="
-                height:14in;
-                width:8.5in;
+                height:16in;
+                width:5in;
                 border:1px solid black;
-                display: flex;
+                padding-top: 2mm;
+                padding-left: 5mm;
+                padding-right: 5mm;
+
+                /* display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: space-around; */
         ">
 
         <div class="item">
-            <div class="name">
-                pear salad (vegetarian)
-            </div>
-            <div class="description">
+            <span class="name">
+                pear salad                
+            </span>
+            <span class="description">
                 organic mixed lettuce, pears, tomato confit, pistachio, white balsamic vinaigrette
+            </span>
+            <div class="allergies">
+                nuts
+            </div>
+            <div class="wine">
+                Hondarrabi Zuri, <b>Ameztoi</b>, 2024, Getariako Txakolina
             </div>
         </div>
 
         <div class="item">
-            <div class="name">
-                shellfish soup                
+            <span class="name">
+                shellfish soup
+            </span>
+            <span class="description">
+                baby shrimp, clams, bacon, celery, potato, carrots, leeks, cauliflower, fresh corn, light chowder
+            </span>
+            <div class="allergies">
+                DAIRY, BACON
             </div>
-            <div class="description">
-                baby shrimp, clams, bacon, celery, potato, carrots, leeks, cauliflower, fresh corn, light chowder broth
+            <div class="wine">
+                Vermentino, Albarola, <b>Vignebasse</b>, 2024, Terenzuola, Colli di Luni
             </div>
         </div>
 
         <div class="item">
-            <div class="name">
-                lamb meatballs
-            </div>
-            <div class="description">
+            <span class="name">
+                lamb meatballs (3 pieces)
+            </span>
+            <span class="description">
                 white bean purée, tapenade, escalivada, yogurt, cumin, mint
+            </span>
+            <div class="allergies">
+                DAIRY, GLUTEN
             </div>
-            <br>
-            escalivada("cooked in ashes") = smoky, roasted vegetables (eggplant, bell peppers, onions), charred, peeled, sliced into strips, olive oil, garlic, sherry vinegar
-            <br><br>
-            tapenade= chopped olives, capers, anchovies, olive oil, garlic, herbs
-        </div>
-
-        <div class="item entrée">
-            <div class="name">
-                pasta and vegetables(vegetarian)
-            </div>
-            <div class="description">
-                house made pasta(shape?), crudités, sautéed vegetables(?), artichokes, panko, parsnip cream
+            <div class="wine">
+                Tempranillo, <b>La Planta</b>, 2023, Ribera del Duero
             </div>
         </div>
 
-        <div class="item entrée">
-            <div class="name">
-                sea bream
+<div style="background:#ccc;">
+
+        <div class="item">
+            <span class="name">
+                pasta &bull; vegetables
+            </span>
+            <span class="description">
+                house made tagliatelle pasta, crudités, sautéed 
+                vegetables(zucchini, onions, piquillos, mushrooms, asparagus), 
+                artichokes, panko bread crumbs, parsnip cream
+            </span>
+            <div class="allergies">
+                vegetarian, can be made vegan, gluten, dairy
             </div>
-            mediterranean white fish, delicate flavor, slightly sweet, firm, flaky, moist
-            <div class="description">
-                bell pepper-potato confit, zucchini, carrots, tomato, garlic-sherry vinegar, paprika oil
+            <div class="wine">
+                Tempranillo Blanco, <b>Valdebarón</b>, 2024, Bodegas Ondarre, Rioja
             </div>
         </div>
 
-        <div class="item entrée">
-            <div class="name">
+        <div class="item">
+            <span class="name">
+                Mediterranean sea bream
+            </span>
+            <span class="description">
+                (skin-on filet), 
+                bell pepper-potato confit, zucchini, carrots, tomato, garlic-sherry vinegar, 
+                paprika oil
+            </span>
+            <div class="allergies">
+
+            </div>
+            <div class="wine">
+                Xarel&bullet;lo, <b>Gres</b>, 2023, Anima Mundi, Catalunya
+            </div>
+        </div>
+
+        <div class="item">
+            <span class="name">
                 beef cheeks
+            </span>
+            <span class="description">
+                creamy polenta, organic mushrooms(oyster, shiitake, crimini), carrots, snow peas, 
+                grape tomato, Rioja red wine sauce
+            </span>
+            <div class="allergies">
+                dairy
             </div>
-            <div class="description">
-                creamy polenta, organic mushrooms(?), carrots, snow peas, grape tomato, Rioja red wine sauce
+            <div class="wine">
+                Tempranillo, <b>El Pedrosal</b>, Crianza, 2021, Bodegas Hnos. 
+                Perez Pascuas, Ribera del Duero
+            </div>
+        </div>
+</div>
+        <div class="item">
+            <span class="name">
+                Catalan cream
+            </span>
+            <span class="description">
+                white chocolate streusel, berries, lime peel, hazelnut brittle                
+            </span>
+            <div class="allergies">
+                DAIRY, gluten, nuts
+            </div>
+            <div class="wine">
+                Sémillon, <b>Cyprès de Climens</b>, 2016, Barsac, Sauternes
             </div>
         </div>
 
         <div class="item">
-            <div class="name">
-                catalan cream
-            </div>
-            <div class="description">
-                white chocolate streusel, berries, lemon, orange<br><br>
-                streusel = crumbly topping, flour, butter, sugar, buttery cookie-like texture
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="name">
+            <span class="name">
                 chocolate plus
+            </span>
+            <span class="description">
+                hazelnut-cocoa sablé, orange-almond sponge cake, hazelnut crémeux, 
+                cinnamon nougatine, pastry cream profiterole
+            </span>
+            <div class="allergies">
+                DAIRY, NUTS, gluten
             </div>
-            <div class="description">
-                hazelnut-cocoa sablé(shortbread cookie), orange-almond sponge cake, hazelnut crémeux, cinnamon nougatine, 
-                pastry cream profiterole
-                <br><br>
-                nougatine = crispy nut brittle mad by cooking sugar with no liquid
+            <div class="wine">
+                field blend, <b>10 year Tawny Port</b>, Noval
             </div>
         </div>
-
 
 
 
